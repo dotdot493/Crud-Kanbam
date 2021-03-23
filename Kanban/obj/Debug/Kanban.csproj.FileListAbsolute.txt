@@ -1,0 +1,14 @@
+F:\visualc#\Kanban\bin\Debug\Kanban.exe.config
+F:\visualc#\Kanban\bin\Debug\Kanban.exe
+F:\visualc#\Kanban\bin\Debug\Kanban.pdb
+F:\visualc#\Kanban\obj\Debug\Kanban.csprojAssemblyReference.cache
+F:\visualc#\Kanban\obj\Debug\Kanban.Properties.Resources.resources
+F:\visualc#\Kanban\obj\Debug\Kanban.csproj.GenerateResource.cache
+F:\visualc#\Kanban\obj\Debug\Kanban.csproj.CoreCompileInputs.cache
+F:\visualc#\Kanban\obj\Debug\Kanban.exe
+F:\visualc#\Kanban\obj\Debug\Kanban.pdb
+F:\visualc#\Kanban\obj\Debug\Kanban.Entrar.resources
+F:\visualc#\Kanban\obj\Debug\Kanban.Tarefas.resources
+F:\visualc#\Kanban\obj\Debug\Kanban.Mostrar.resources
+F:\visualc#\Kanban\obj\Debug\Kanban.Nome.resources
+F:\visualc#\Kanban\obj\Debug\Kanban.Status.resources
