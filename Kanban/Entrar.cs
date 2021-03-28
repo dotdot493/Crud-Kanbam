@@ -28,5 +28,12 @@ namespace Kanban
             Tela.Show();
             this.Hide();
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sobre Tela = new sobre();
+            Tela.Show();
+            this.Hide();
+        }
     }
 }

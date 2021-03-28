@@ -61,11 +61,15 @@ namespace Kanban
             this.statusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnvoltar = new System.Windows.Forms.Button();
             this.responsavelDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.banco4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingNavigator)).BeginInit();
@@ -75,13 +79,14 @@ namespace Kanban
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGridView)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(551, 411);
+            this.button1.Location = new System.Drawing.Point(562, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 62);
             this.button1.TabIndex = 0;
@@ -138,7 +143,7 @@ namespace Kanban
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.responsavelBindingNavigatorSaveItem});
-            this.responsavelBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.responsavelBindingNavigator.Location = new System.Drawing.Point(0, 24);
             this.responsavelBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.responsavelBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.responsavelBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -261,7 +266,7 @@ namespace Kanban
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.tarefaDataGridView.DataSource = this.tarefaBindingSource;
-            this.tarefaDataGridView.Location = new System.Drawing.Point(160, 37);
+            this.tarefaDataGridView.Location = new System.Drawing.Point(160, 53);
             this.tarefaDataGridView.Name = "tarefaDataGridView";
             this.tarefaDataGridView.Size = new System.Drawing.Size(543, 220);
             this.tarefaDataGridView.TabIndex = 3;
@@ -305,7 +310,7 @@ namespace Kanban
             // 
             this.btnvoltar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnvoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvoltar.Location = new System.Drawing.Point(31, 411);
+            this.btnvoltar.Location = new System.Drawing.Point(160, 409);
             this.btnvoltar.Name = "btnvoltar";
             this.btnvoltar.Size = new System.Drawing.Size(141, 62);
             this.btnvoltar.TabIndex = 5;
@@ -321,10 +326,16 @@ namespace Kanban
             this.responsavelDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2});
             this.responsavelDataGridView.DataSource = this.responsavelBindingSource;
-            this.responsavelDataGridView.Location = new System.Drawing.Point(12, 37);
+            this.responsavelDataGridView.Location = new System.Drawing.Point(160, 279);
             this.responsavelDataGridView.Name = "responsavelDataGridView";
-            this.responsavelDataGridView.Size = new System.Drawing.Size(142, 124);
+            this.responsavelDataGridView.Size = new System.Drawing.Size(144, 124);
             this.responsavelDataGridView.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Responsável";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // statusDataGridView
             // 
@@ -336,7 +347,7 @@ namespace Kanban
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
             this.statusDataGridView.DataSource = this.statusBindingSource;
-            this.statusDataGridView.Location = new System.Drawing.Point(160, 263);
+            this.statusDataGridView.Location = new System.Drawing.Point(356, 281);
             this.statusDataGridView.Name = "statusDataGridView";
             this.statusDataGridView.Size = new System.Drawing.Size(347, 124);
             this.statusDataGridView.TabIndex = 5;
@@ -359,11 +370,37 @@ namespace Kanban
             this.dataGridViewTextBoxColumn12.HeaderText = "Feito";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // dataGridViewTextBoxColumn2
+            // menuStrip1
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Responsável";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem,
+            this.sobreToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(975, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem});
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // Mostrar
             // 
@@ -375,7 +412,9 @@ namespace Kanban
             this.Controls.Add(this.btnvoltar);
             this.Controls.Add(this.tarefaDataGridView);
             this.Controls.Add(this.responsavelBindingNavigator);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Mostrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mostrar";
@@ -390,6 +429,8 @@ namespace Kanban
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGridView)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +473,9 @@ namespace Kanban
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
     }
 }

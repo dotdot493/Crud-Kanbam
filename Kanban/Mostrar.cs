@@ -47,5 +47,25 @@ namespace Kanban
             Tela.Show();
             this.Hide();
         }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.tarefaTableAdapter.FillBy(this.banco4DataSet.Tarefa);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sobre Tela = new sobre();
+            Tela.Show();
+            this.Hide();
+        }
     }
 }

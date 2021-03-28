@@ -57,6 +57,12 @@
     <Compile Include="Entrar.Designer.cs">
       <DependentUpon>Entrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sobre.Designer.cs">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mostrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="sobre.resx">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Status.resx">
       <DependentUpon>Status.cs</DependentUpon>
     </EmbeddedResource>

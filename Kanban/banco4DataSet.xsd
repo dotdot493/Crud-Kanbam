@@ -176,7 +176,16 @@ SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trab
               <Mapping SourceColumn="fkstatus" DataSetColumn="fkstatus" />
               <Mapping SourceColumn="fkresponsavel" DataSetColumn="fkresponsavel" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="banco4ConnectionString (Settings)" DbObjectName="dbo.Tarefa" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trabalho], fkstatus, fkresponsavel FROM dbo.Tarefa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -186,7 +195,7 @@ SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trab
   <xs:element name="banco4DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="banco4DataSet" msprop:Generator_UserDSName="banco4DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Responsavel" msprop:Generator_TableClassName="ResponsavelDataTable" msprop:Generator_TableVarName="tableResponsavel" msprop:Generator_TablePropName="Responsavel" msprop:Generator_RowDeletingName="ResponsavelRowDeleting" msprop:Generator_RowChangingName="ResponsavelRowChanging" msprop:Generator_RowEvHandlerName="ResponsavelRowChangeEventHandler" msprop:Generator_RowDeletedName="ResponsavelRowDeleted" msprop:Generator_UserTableName="Responsavel" msprop:Generator_RowChangedName="ResponsavelRowChanged" msprop:Generator_RowEvArgName="ResponsavelRowChangeEvent" msprop:Generator_RowClassName="ResponsavelRow">
+        <xs:element name="Responsavel" msprop:Generator_TableClassName="ResponsavelDataTable" msprop:Generator_TableVarName="tableResponsavel" msprop:Generator_RowChangedName="ResponsavelRowChanged" msprop:Generator_TablePropName="Responsavel" msprop:Generator_RowDeletingName="ResponsavelRowDeleting" msprop:Generator_RowChangingName="ResponsavelRowChanging" msprop:Generator_RowEvHandlerName="ResponsavelRowChangeEventHandler" msprop:Generator_RowDeletedName="ResponsavelRowDeleted" msprop:Generator_RowClassName="ResponsavelRow" msprop:Generator_UserTableName="Responsavel" msprop:Generator_RowEvArgName="ResponsavelRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdResponsavel" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdResponsavel" msprop:Generator_ColumnPropNameInRow="IdResponsavel" msprop:Generator_ColumnPropNameInTable="IdResponsavelColumn" msprop:Generator_UserColumnName="IdResponsavel" type="xs:int" />
@@ -200,7 +209,7 @@ SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trab
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="status" msprop:Generator_TableClassName="statusDataTable" msprop:Generator_TableVarName="tablestatus" msprop:Generator_TablePropName="status" msprop:Generator_RowDeletingName="statusRowDeleting" msprop:Generator_RowChangingName="statusRowChanging" msprop:Generator_RowEvHandlerName="statusRowChangeEventHandler" msprop:Generator_RowDeletedName="statusRowDeleted" msprop:Generator_UserTableName="status" msprop:Generator_RowChangedName="statusRowChanged" msprop:Generator_RowEvArgName="statusRowChangeEvent" msprop:Generator_RowClassName="statusRow">
+        <xs:element name="status" msprop:Generator_TableClassName="statusDataTable" msprop:Generator_TableVarName="tablestatus" msprop:Generator_RowChangedName="statusRowChanged" msprop:Generator_TablePropName="status" msprop:Generator_RowDeletingName="statusRowDeleting" msprop:Generator_RowChangingName="statusRowChanging" msprop:Generator_RowEvHandlerName="statusRowChangeEventHandler" msprop:Generator_RowDeletedName="statusRowDeleted" msprop:Generator_RowClassName="statusRow" msprop:Generator_UserTableName="status" msprop:Generator_RowEvArgName="statusRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Idstatus" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdstatus" msprop:Generator_ColumnPropNameInRow="Idstatus" msprop:Generator_ColumnPropNameInTable="IdstatusColumn" msprop:Generator_UserColumnName="Idstatus" type="xs:int" />
@@ -228,7 +237,7 @@ SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trab
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tarefa" msprop:Generator_TableClassName="TarefaDataTable" msprop:Generator_TableVarName="tableTarefa" msprop:Generator_TablePropName="Tarefa" msprop:Generator_RowDeletingName="TarefaRowDeleting" msprop:Generator_RowChangingName="TarefaRowChanging" msprop:Generator_RowEvHandlerName="TarefaRowChangeEventHandler" msprop:Generator_RowDeletedName="TarefaRowDeleted" msprop:Generator_UserTableName="Tarefa" msprop:Generator_RowChangedName="TarefaRowChanged" msprop:Generator_RowEvArgName="TarefaRowChangeEvent" msprop:Generator_RowClassName="TarefaRow">
+        <xs:element name="Tarefa" msprop:Generator_TableClassName="TarefaDataTable" msprop:Generator_TableVarName="tableTarefa" msprop:Generator_RowChangedName="TarefaRowChanged" msprop:Generator_TablePropName="Tarefa" msprop:Generator_RowDeletingName="TarefaRowDeleting" msprop:Generator_RowChangingName="TarefaRowChanging" msprop:Generator_RowEvHandlerName="TarefaRowChangeEventHandler" msprop:Generator_RowDeletedName="TarefaRowDeleted" msprop:Generator_RowClassName="TarefaRow" msprop:Generator_UserTableName="Tarefa" msprop:Generator_RowEvArgName="TarefaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Idtarefa" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdtarefa" msprop:Generator_ColumnPropNameInRow="Idtarefa" msprop:Generator_ColumnPropNameInTable="IdtarefaColumn" msprop:Generator_UserColumnName="Idtarefa" type="xs:int" />
@@ -275,8 +284,8 @@ SELECT Idtarefa, [Vericar pendencias], [Executar Trabalho], [Superviosionar Trab
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Tarefa_ToTable" msdata:parent="status" msdata:child="Tarefa" msdata:parentkey="Idstatus" msdata:childkey="fkstatus" msprop:Generator_UserChildTable="Tarefa" msprop:Generator_ChildPropName="GetTarefaRows" msprop:Generator_UserRelationName="FK_Tarefa_ToTable" msprop:Generator_ParentPropName="statusRow" msprop:Generator_RelationVarName="relationFK_Tarefa_ToTable" msprop:Generator_UserParentTable="status" />
-      <msdata:Relationship name="FK_Tarefa_ToTable_1" msdata:parent="Responsavel" msdata:child="Tarefa" msdata:parentkey="IdResponsavel" msdata:childkey="fkresponsavel" msprop:Generator_UserChildTable="Tarefa" msprop:Generator_ChildPropName="GetTarefaRows" msprop:Generator_UserRelationName="FK_Tarefa_ToTable_1" msprop:Generator_ParentPropName="ResponsavelRow" msprop:Generator_RelationVarName="relationFK_Tarefa_ToTable_1" msprop:Generator_UserParentTable="Responsavel" />
+      <msdata:Relationship name="FK_Tarefa_ToTable" msdata:parent="status" msdata:child="Tarefa" msdata:parentkey="Idstatus" msdata:childkey="fkstatus" msprop:Generator_UserChildTable="Tarefa" msprop:Generator_ChildPropName="GetTarefaRows" msprop:Generator_UserRelationName="FK_Tarefa_ToTable" msprop:Generator_RelationVarName="relationFK_Tarefa_ToTable" msprop:Generator_UserParentTable="status" msprop:Generator_ParentPropName="statusRow" />
+      <msdata:Relationship name="FK_Tarefa_ToTable_1" msdata:parent="Responsavel" msdata:child="Tarefa" msdata:parentkey="IdResponsavel" msdata:childkey="fkresponsavel" msprop:Generator_UserChildTable="Tarefa" msprop:Generator_ChildPropName="GetTarefaRows" msprop:Generator_UserRelationName="FK_Tarefa_ToTable_1" msprop:Generator_RelationVarName="relationFK_Tarefa_ToTable_1" msprop:Generator_UserParentTable="Responsavel" msprop:Generator_ParentPropName="ResponsavelRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
